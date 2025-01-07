@@ -27,9 +27,10 @@ while True:
         print("\nDry Manchurian: 120Rs\nHalf Dry Manchurian: 70Rs\nManchau Soup: 50Rs\nChinese Bhel: 100Rs\nChinese Noodles: 105Rs\nFried Fries: 110Rs")  
         item1 = input("Enter the name of the item you want to order: ")
         if item1 in chinees:
-            all_items.append(f"{item1} - {chinees[item1]}Rs")
-            order_total += chinees[item1]
-            print(f"Your item {item1} has been added to your order")
+            quantity = int(input("Enter quantity: "))
+            all_items.append(f"{item1} x{quantity} - {chinees[item1]*quantity}Rs")
+            order_total += chinees[item1] * quantity
+            print(f"Your item {item1} (x{quantity}) has been added to your order")
         else:
             print(f"Order item {item1} is not available yet")
 
@@ -62,24 +63,24 @@ while True:
         if ch2 == 'S':
             print("\n****Kaju Veg Sabji****")
             print("\nKaju Masala = 250Rs..\nVeg Kolhapuri = 250Rs..\nVeg Tufani = 275Rs..\nKaju Butter Masala = 280Rs..\nKaju Kofta = 300Rs..")
-            print("\n**Mitro Special Sabji = 320Rs..**")
             item3 = input("Enter the name of the item you want to order: ")
             if item3 in punjabi["Sabji"]:
-                all_items.append(f"{item3} - {punjabi['Sabji'][item3]}Rs")
-                order_total += punjabi["Sabji"][item3]
-                print(f"Your item {item3} has been added to your order")
+                quantity = int(input("Enter quantity: "))
+                all_items.append(f"{item3} x{quantity} - {punjabi['Sabji'][item3]*quantity}Rs")
+                order_total += punjabi["Sabji"][item3] * quantity
+                print(f"Your item {item3} (x{quantity}) has been added to your order")
             else:
                 print(f"Order item {item3} is not available yet")
         
         elif ch2 == 'P':
             print("\n****Paneer Sabji****")
             print("\nVeg Paneer = 210Rs..\nButter Paneer = 220Rs..\nChiz Paneer = 240Rs..\nMatka Paneer = 250Rs..\nKofta Paneer = 260Rs..")
-            print("\n**Mitro Special Sabji = 320Rs..**")
             item4 = input("Enter the name of the item you want to order: ")
             if item4 in punjabi["Paneer"]:
-                all_items.append(f"{item4} - {punjabi['Paneer'][item4]}Rs")
-                order_total += punjabi["Paneer"][item4]
-                print(f"Your item {item4} has been added to your order")
+                quantity = int(input("Enter quantity: "))
+                all_items.append(f"{item4} x{quantity} - {punjabi['Paneer'][item4]*quantity}Rs")
+                order_total += punjabi["Paneer"][item4] * quantity
+                print(f"Your item {item4} (x{quantity}) has been added to your order")
             else:
                 print(f"Order item {item4} is not available yet")
         
@@ -88,9 +89,10 @@ while True:
             print("\nNaan = 50Rs..\nButter Roti = 35Rs..\nRegular Roti = 20Rs..")
             item5 = input("Enter the name of the item you want to order: ")
             if item5 in punjabi["Roti"]:
-                all_items.append(f"{item5} - {punjabi['Roti'][item5]}Rs")
-                order_total += punjabi["Roti"][item5]
-                print(f"Your item {item5} has been added to your order")
+                quantity = int(input("Enter quantity: "))
+                all_items.append(f"{item5} x{quantity} - {punjabi['Roti'][item5]*quantity}Rs")
+                order_total += punjabi["Roti"][item5] * quantity
+                print(f"Your item {item5} (x{quantity}) has been added to your order")
             else:
                 print(f"Order item {item5} is not available yet")
         
@@ -99,9 +101,10 @@ while True:
             print("\nMitro Special Sabji = 320Rs..")
             item6 = input("Enter the name of the item you want to order: ")
             if item6 == 'Mitro Special Sabji':
-                all_items.append(f"{item6} - {punjabi[item6]}Rs")
-                order_total += punjabi[item6]
-                print(f"Your item {item6} has been added to your order")
+                quantity = int(input("Enter quantity: "))
+                all_items.append(f"{item6} x{quantity} - {punjabi[item6]*quantity}Rs")
+                order_total += punjabi[item6] * quantity
+                print(f"Your item {item6} (x{quantity}) has been added to your order")
             else:
                 print(f"Order item {item6} is not available yet")
 
@@ -132,9 +135,10 @@ while True:
             print("\nDhokla = 60Rs..\nKhandvi = 80Rs..\nPatra = 90Rs..\nUndhiyu = 150Rs..")
             item7 = input("Enter the name of the item you want to order: ")
             if item7 in gujarati['Sabji']:
-                all_items.append(f"{item7} - {gujarati['Sabji'][item7]}Rs")
-                order_total += gujarati['Sabji'][item7]
-                print(f"Your item {item7} has been added to your order")
+                quantity = int(input("Enter quantity: "))
+                all_items.append(f"{item7} x{quantity} - {gujarati['Sabji'][item7]*quantity}Rs")
+                order_total += gujarati['Sabji'][item7] * quantity
+                print(f"Your item {item7} (x{quantity}) has been added to your order")
             else:
                 print(f"Order item {item7} is not available yet")
         
@@ -143,9 +147,10 @@ while True:
             print("\nPlain Rice = 80Rs..\nJeera Rice = 100Rs..\nBiryani = 150Rs..")
             item8 = input("Enter the name of the item you want to order: ")
             if item8 in gujarati['Rice']:
-                all_items.append(f"{item8} - {gujarati['Rice'][item8]}Rs")
-                order_total += gujarati['Rice'][item8]
-                print(f"Your item {item8} has been added to your order")
+                quantity = int(input("Enter quantity: "))
+                all_items.append(f"{item8} x{quantity} - {gujarati['Rice'][item8]*quantity}Rs")
+                order_total += gujarati['Rice'][item8] * quantity
+                print(f"Your item {item8} (x{quantity}) has been added to your order")
             else:
                 print(f"Order item {item8} is not available yet")
         
@@ -154,9 +159,10 @@ while True:
             print("\nThepla = 40Rs..\nPhulka = 30Rs..")
             item9 = input("Enter the name of the item you want to order: ")
             if item9 in gujarati['Roti']:
-                all_items.append(f"{item9} - {gujarati['Roti'][item9]}Rs")
-                order_total += gujarati['Roti'][item9]
-                print(f"Your item {item9} has been added to your order")
+                quantity = int(input("Enter quantity: "))
+                all_items.append(f"{item9} x{quantity} - {gujarati['Roti'][item9]*quantity}Rs")
+                order_total += gujarati['Roti'][item9] * quantity
+                print(f"Your item {item9} (x{quantity}) has been added to your order")
             else:
                 print(f"Order item {item9} is not available yet")
         
@@ -165,9 +171,10 @@ while True:
             print("\nMitro Special Gujarati Thali = 250Rs..")
             item10 = input("Enter the name of the item you want to order: ")
             if item10 == 'Mitro Special Gujarati Thali':
-                all_items.append(f"{item10} - {gujarati[item10]}Rs")
-                order_total += gujarati[item10]
-                print(f"Your item {item10} has been added to your order")
+                quantity = int(input("Enter quantity: "))
+                all_items.append(f"{item10} x{quantity} - {gujarati[item10]*quantity}Rs")
+                order_total += gujarati[item10] * quantity
+                print(f"Your item {item10} (x{quantity}) has been added to your order")
             else:
                 print(f"Order item {item10} is not available yet")
 
@@ -193,9 +200,10 @@ while True:
             print("\nMargherita = 250Rs..\nPepperoni = 280Rs..\nVeggie Supreme = 300Rs..\nCheese Burst = 350Rs..")
             item11 = input("Enter the name of the item you want to order: ")
             if item11 in italian['Pizza']:
-                all_items.append(f"{item11} - {italian['Pizza'][item11]}Rs")
-                order_total += italian['Pizza'][item11]
-                print(f"Your item {item11} has been added to your order")
+                quantity = int(input("Enter quantity: "))
+                all_items.append(f"{item11} x{quantity} - {italian['Pizza'][item11]*quantity}Rs")
+                order_total += italian['Pizza'][item11] * quantity
+                print(f"Your item {item11} (x{quantity}) has been added to your order")
             else:
                 print(f"Order item {item11} is not available yet")
         
@@ -204,9 +212,10 @@ while True:
             print("\nSpaghetti Aglio Olio = 200Rs..\nPenne Arrabbiata = 220Rs..\nMac and Cheese = 240Rs..")
             item12 = input("Enter the name of the item you want to order: ")
             if item12 in italian['Pasta']:
-                all_items.append(f"{item12} - {italian['Pasta'][item12]}Rs")
-                order_total += italian['Pasta'][item12]
-                print(f"Your item {item12} has been added to your order")
+                quantity = int(input("Enter quantity: "))
+                all_items.append(f"{item12} x{quantity} - {italian['Pasta'][item12]*quantity}Rs")
+                order_total += italian['Pasta'][item12] * quantity
+                print(f"Your item {item12} (x{quantity}) has been added to your order")
             else:
                 print(f"Order item {item12} is not available yet")
 
@@ -221,9 +230,10 @@ while True:
         print("\nEspresso = 80Rs..\nCappuccino = 120Rs..\nLatte = 130Rs..\nMocha = 140Rs..")
         item13 = input("Enter the name of the item you want to order: ")
         if item13 in coffee:
-            all_items.append(f"{item13} - {coffee[item13]}Rs")
-            order_total += coffee[item13]
-            print(f"Your item {item13} has been added to your order")
+            quantity = int(input("Enter quantity: "))
+            all_items.append(f"{item13} x{quantity} - {coffee[item13]*quantity}Rs")
+            order_total += coffee[item13] * quantity
+            print(f"Your item {item13} (x{quantity}) has been added to your order")
         else:
             print(f"Order item {item13} is not available yet")
 
@@ -238,9 +248,10 @@ while True:
         print("\nCoke = 50Rs..\nPepsi = 50Rs..\nSprite = 50Rs..\nFanta = 50Rs..")
         item14 = input("Enter the name of the item you want to order: ")
         if item14 in cold_drinks:
-            all_items.append(f"{item14} - {cold_drinks[item14]}Rs")
-            order_total += cold_drinks[item14]
-            print(f"Your item {item14} has been added to your order")
+            quantity = int(input("Enter quantity: "))
+            all_items.append(f"{item14} x{quantity} - {cold_drinks[item14]*quantity}Rs")
+            order_total += cold_drinks[item14] * quantity
+            print(f"Your item {item14} (x{quantity}) has been added to your order")
         else:
             print(f"Order item {item14} is not available yet")
     
